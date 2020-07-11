@@ -4917,6 +4917,7 @@ GameObject:
   - component: {fileID: 9015265174711219840}
   - component: {fileID: 9015265174711219839}
   - component: {fileID: 9015265174711219838}
+  - component: {fileID: 9015265174711219841}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -4970,6 +4971,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.02, z: 0}
+--- !u!114 &9015265174711219841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015265174711219837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bef5adc45fa69c4181df3c42db78a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat_mouth: {fileID: 2100000, guid: bea4a0014f0012e4f8d80f890bf8f3c2, type: 2}
+  mat_eyes: {fileID: 2100000, guid: c34a089d1b6b7b6469b57407384c09b4, type: 2}
+  mat_eyebrows: {fileID: 2100000, guid: 42913fd8f504e46438e7926bfc4c6e36, type: 2}
 --- !u!1 &9058387972102992374
 GameObject:
   m_ObjectHideFlags: 0

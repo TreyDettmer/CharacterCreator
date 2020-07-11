@@ -5,10 +5,12 @@ using UnityEngine;
 public class AnimController : MonoBehaviour
 {
     Animator anim;
+    FaceController faceController;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        faceController = GetComponent<FaceController>();
     }
 
     private void Update()
@@ -55,9 +57,11 @@ public class AnimController : MonoBehaviour
     /// <param name="time">The length of the animation.</param>
     IEnumerator IdleAnimRoutine(int condition,float time = 5f)
     {
+        faceController.RunAnimation(condition);
         anim.SetInteger("condition", condition);
         yield return new WaitForSeconds(time);
         anim.SetInteger("condition", 0);
-        
+        faceController.RunAnimation(0);
+
     }
 }
