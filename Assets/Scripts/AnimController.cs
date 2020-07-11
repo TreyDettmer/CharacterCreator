@@ -6,6 +6,7 @@ public class AnimController : MonoBehaviour
 {
     Animator anim;
     FaceController faceController;
+    public CameraController cameraController;
 
     private void Start()
     {
@@ -51,6 +52,20 @@ public class AnimController : MonoBehaviour
                 StartCoroutine(IdleAnimRoutine(5, 4.167f));
             }
         }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            cameraController.FocusCamera(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            cameraController.FocusCamera(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            cameraController.FocusCamera(1);
+        }
+
+
     }
 
     /// <param name="condition">Index of animation to play.</param>

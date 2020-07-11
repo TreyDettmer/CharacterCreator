@@ -188,6 +188,12 @@ public class FaceController : MonoBehaviour
         mat_mouth.SetTextureOffset("_MainTex", new Vector2(0, 0));
     }
 
-    
+    private void OnDestroy()
+    {
+        mat_mouth.SetTextureOffset("_MainTex", new Vector2(0, 0));
+        mat_eyebrows.SetTextureOffset("_MainTex", new Vector2(0, 0));
+        mat_eyes.SetTextureOffset("_MainTex", new Vector2(0, 0));
+    }
+
 
 }
