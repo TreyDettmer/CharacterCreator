@@ -6,6 +6,7 @@ using UnityEngine;
 public class GUIsubcategory : GUIcategory
 {
     Image background;
+    public GUIsubcategory[] otherSubCategories;
     private void Start()
     {
         background = GetComponent<Image>();
@@ -26,5 +27,24 @@ public class GUIsubcategory : GUIcategory
         background.color = new Color(1, 1, 1, .39f);
 
 
+    }
+
+    public void OnPointerClick()
+    {
+        foreach (GUIsubcategory subCategory in otherSubCategories)
+        {
+            subCategory.HideSubCategories();
+        }
+        foreach (GUIcategory child in children)
+        {
+            child.ShowCategory();
+        }
+    }
+    public void HideSubCategories()
+    {
+        foreach (GUIcategory child in children)
+        {
+            child.HideCategory();
+        }
     }
 }
