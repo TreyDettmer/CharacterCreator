@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GUIpanel : GUIcategory
 {
+
     public override void ShowCategory()
     {
         base.ShowCategory();
@@ -12,4 +13,5 @@ public class GUIpanel : GUIcategory
             child.ShowCategory();
         }
     }
+
 }
