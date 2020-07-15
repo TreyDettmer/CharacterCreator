@@ -20,7 +20,9 @@ public class ColorPicker : GUIcategory
     // Start is called before the first frame update
     void Start()
     {
-        
+        r_slider.value = material.color.r;
+        g_slider.value = material.color.g;
+        b_slider.value = material.color.b;
     }
 
     // Update is called once per frame
