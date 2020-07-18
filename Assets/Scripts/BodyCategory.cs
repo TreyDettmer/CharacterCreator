@@ -7,6 +7,8 @@ public class BodyCategory : GUIcategory
 {
     Image background;
     public BodyCategory[] otherBodyCategories;
+    public AnimController animController;
+
     private void Start()
     {
         background = GetComponent<Image>();
@@ -38,6 +40,11 @@ public class BodyCategory : GUIcategory
         {
             child.ShowCategory();
         }
+
+        if (animController)
+        {
+            animController.DrawGuitar();
+        }
         
         
     }
@@ -48,5 +55,11 @@ public class BodyCategory : GUIcategory
         {
             child.HideCategory();
         }
+        if (animController)
+        {
+            animController.StoreGuitar();
+        }
     }
+
+
 }

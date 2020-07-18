@@ -79,4 +79,40 @@ public class AnimController : MonoBehaviour
         faceController.RunAnimation(0);
 
     }
+
+    public void DrawGuitar()
+    {
+        if (anim)
+        {
+            if (anim.GetInteger("condition") < 6) //if we're not already holding the guitar
+            {
+                StartCoroutine("DrawGuitarRoutine");
+            }
+        }
+    }
+
+    public void StoreGuitar()
+    {
+        if (anim)
+        {
+            if (anim.GetInteger("condition") >= 6)
+            {
+                StartCoroutine("StoreGuitarRoutine");
+            }
+        }
+    }
+
+    IEnumerator DrawGuitarRoutine()
+    {
+        anim.SetInteger("condition", 6);
+        yield return new WaitForSeconds(0.625f);
+        anim.SetInteger("condition", 7);
+
+    }
+    IEnumerator StoreGuitarRoutine()
+    {
+        anim.SetInteger("condition", 8);
+        yield return new WaitForSeconds(0.625f);
+        anim.SetInteger("condition", 0);
+    }
 }

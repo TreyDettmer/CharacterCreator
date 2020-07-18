@@ -1,11 +1,26 @@
 fileFormatVersion: 2
-guid: ec432207eaf6a754986be2db757a4e4e
+guid: 818a16bad8e26aa42b0dd2c7f61189b4
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
+      74: -963183678868968731
+    second: Draw_Guitar
+  - first:
+      74: 2073368295054106501
+    second: Hold_Guitar
+  - first:
+      74: 3370692388094352308
+    second: Store_Guitar
+  - first:
       74: 8483519723482191652
     second: Armature|BasicIdle
+  - first:
+      74: 1643176727194517554
+    second: Armature|Draw_Guitar
+  - first:
+      74: 6729441407661235442
+    second: Armature|Hold_Guitar
   - first:
       74: 1873258893544455815
     second: Armature|IdleButt
@@ -21,6 +36,9 @@ ModelImporter:
   - first:
       74: 2929350193291270190
     second: Armature|IdleTwist
+  - first:
+      74: -437594427523095150
+    second: Armature|Store_Guitar
   externalObjects: {}
   materials:
     materialImportMode: 0
@@ -36,19 +54,40 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Armature|BasicIdle' has import animation warnings
-      that might lower retargeting quality:\n\t'Chest' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Armature|IdleButt'
+    animationImportWarnings: "\nClip 'Draw_Guitar' has import animation warnings
+      that might lower retargeting quality:\n\t'Lower Thumb.R' has translation animation
+      that will be discarded.\n\t'Lower Index.R' has translation animation that will
+      be discarded.\n\t'Lower Middle.R' has translation animation that will be discarded.\n\t'Lower
+      Ring.R' has translation animation that will be discarded.\n\t'Lower Pinky.R'
+      has translation animation that will be discarded.\n\nClip 'Store_Guitar' has
+      import animation warnings that might lower retargeting quality:\n\t'Lower Thumb.R'
+      has translation animation that will be discarded.\n\t'Lower Index.R' has translation
+      animation that will be discarded.\n\t'Lower Middle.R' has translation animation
+      that will be discarded.\n\t'Lower Ring.R' has translation animation that will
+      be discarded.\n\t'Lower Pinky.R' has translation animation that will be discarded.\n\nClip
+      'Armature|BasicIdle' has import animation warnings that might lower retargeting
+      quality:\n\t'Chest' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\nClip 'Armature|Draw_Guitar' has import animation
+      warnings that might lower retargeting quality:\n\t'Lower Thumb.R' has translation
+      animation that will be discarded.\n\t'Lower Index.R' has translation animation
+      that will be discarded.\n\t'Lower Middle.R' has translation animation that
+      will be discarded.\n\t'Lower Ring.R' has translation animation that will be
+      discarded.\n\t'Lower Pinky.R' has translation animation that will be discarded.\n\nClip
+      'Armature|IdleButt' has import animation warnings that might lower retargeting
+      quality:\n\t'Chest' is inbetween humanoid transforms and has rotation animation
+      that will be discarded.\n\nClip 'Armature|IdleCheckoutArms' has import animation
+      warnings that might lower retargeting quality:\n\t'Chest' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\nClip 'Armature|IdleCheckoutBack'
       has import animation warnings that might lower retargeting quality:\n\t'Chest'
       is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
-      'Armature|IdleCheckoutArms' has import animation warnings that might lower
-      retargeting quality:\n\t'Chest' is inbetween humanoid transforms and has rotation
-      animation that will be discarded.\n\nClip 'Armature|IdleCheckoutBack' has import
-      animation warnings that might lower retargeting quality:\n\t'Chest' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\nClip
       'Armature|IdleTwist' has import animation warnings that might lower retargeting
       quality:\n\t'Chest' is inbetween humanoid transforms and has rotation animation
-      that will be discarded.\n"
+      that will be discarded.\n\nClip 'Armature|Store_Guitar' has import animation
+      warnings that might lower retargeting quality:\n\t'Lower Thumb.R' has translation
+      animation that will be discarded.\n\t'Lower Index.R' has translation animation
+      that will be discarded.\n\t'Lower Middle.R' has translation animation that
+      will be discarded.\n\t'Lower Ring.R' has translation animation that will be
+      discarded.\n\t'Lower Pinky.R' has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -62,40 +101,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|BasicIdle
-      takeName: Armature|BasicIdle
+      name: Armature|Draw_Guitar
+      takeName: Armature|Draw_Guitar
       internalID: 0
       firstFrame: 0
-      lastFrame: 239
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|IdleButt
-      takeName: Armature|IdleButt
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 149
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -104,9 +114,9 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 1
+      loopBlendOrientation: 0
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -120,8 +130,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|IdleCheckoutArms
-      takeName: Armature|IdleCheckoutArms
+      name: Armature|Hold_Guitar
+      takeName: Armature|Hold_Guitar
       internalID: 0
       firstFrame: 0
       lastFrame: 119
@@ -131,11 +141,11 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -149,11 +159,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|IdleCheckoutBack
-      takeName: Armature|IdleCheckoutBack
+      name: Armature|Store_Guitar
+      takeName: Armature|Store_Guitar
       internalID: 0
       firstFrame: 0
-      lastFrame: 59
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -162,67 +172,9 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 1
+      loopBlendOrientation: 0
       loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|IdleCheckoutLegs
-      takeName: Armature|IdleCheckoutLegs
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 87
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|IdleTwist
-      takeName: Armature|IdleTwist
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 100
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 1
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
+      loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -1173,11 +1125,12 @@ ModelImporter:
     hasTranslationDoF: 1
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
-  autoGenerateAvatarMappingIfUnspecified: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ec432207eaf6a754986be2db757a4e4e,
+    type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   additionalBone: 0
   userData: 
   assetBundleName: 
