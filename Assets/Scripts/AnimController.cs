@@ -7,6 +7,7 @@ public class AnimController : MonoBehaviour
     Animator anim;
     FaceController faceController;
     public CameraController cameraController;
+    public GameObject[] guitars;
 
     private void Start()
     {
@@ -80,13 +81,13 @@ public class AnimController : MonoBehaviour
 
     }
 
-    public void DrawGuitar()
+    public void DrawGuitar(int guitarIndex)
     {
         if (anim)
         {
             if (anim.GetInteger("condition") < 6) //if we're not already holding the guitar
             {
-                StartCoroutine("DrawGuitarRoutine");
+                StartCoroutine("DrawGuitarRoutine",guitarIndex);
             }
         }
     }
@@ -102,16 +103,31 @@ public class AnimController : MonoBehaviour
         }
     }
 
-    IEnumerator DrawGuitarRoutine()
+    IEnumerator DrawGuitarRoutine(int guitarIndex)
     {
         anim.SetInteger("condition", 6);
         yield return new WaitForSeconds(0.625f);
+        for (int i = 0; i < guitars.Length;i++)
+        {
+            if (i == guitarIndex)
+            {
+                guitars[i].SetActive(true);
+            }
+            else
+            {
+                guitars[i].SetActive(false);
+            }
+        }
         anim.SetInteger("condition", 7);
 
     }
     IEnumerator StoreGuitarRoutine()
     {
         anim.SetInteger("condition", 8);
+        foreach (GameObject guitar in guitars)
+        {
+            guitar.SetActive(false);
+        }
         yield return new WaitForSeconds(0.625f);
         anim.SetInteger("condition", 0);
     }
