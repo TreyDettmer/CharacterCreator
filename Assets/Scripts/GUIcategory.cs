@@ -24,10 +24,18 @@ public abstract class GUIcategory : MonoBehaviour
             child.HideCategory();
         }
         this.gameObject.SetActive(false);
+        for (int a = 0; a < transform.childCount; a++)
+        {
+            transform.GetChild(a).gameObject.SetActive(false);
+        }
     }
 
     public virtual void ShowCategory()
     {
         this.gameObject.SetActive(true);
+        for (int a = 0; a < transform.childCount; a++)
+        {
+            transform.GetChild(a).gameObject.SetActive(true);
+        }
     }
 }

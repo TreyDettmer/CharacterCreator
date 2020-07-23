@@ -43,7 +43,7 @@ public class BodyCategory : GUIcategory
 
         if (animController)
         {
-            animController.DrawGuitar(0);
+            animController.DrawGuitar();
         }
         
         

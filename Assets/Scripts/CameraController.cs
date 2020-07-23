@@ -21,7 +21,8 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
-            transform.RotateAround(bodyTarget.position, Vector3.up, -Input.GetAxisRaw("Horizontal") * rotationSpeed * Time.deltaTime);
+            bodyTarget.Rotate(new Vector3(0, 1, 0), -Input.GetAxisRaw("Horizontal") * rotationSpeed * Time.deltaTime);
+            //transform.RotateAround(bodyTarget.position, Vector3.up, -Input.GetAxisRaw("Horizontal") * rotationSpeed * Time.deltaTime);
         }
         
         if (Input.GetAxisRaw("Mouse ScrollWheel") != 0)
