@@ -21,38 +21,43 @@ public class AnimController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             
+            //if (anim.GetInteger("condition") == 0)
+            //{
+            //    StartCoroutine(IdleAnimRoutine(1,6.208f));
+            //}
             if (anim.GetInteger("condition") == 0)
             {
-                StartCoroutine(IdleAnimRoutine(1,6.208f));
+                StartCoroutine(IdleAnimRoutine(1, 4.958f));
             }
+            
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            if (anim.GetInteger("condition") == 0)
-            {
-                StartCoroutine(IdleAnimRoutine(2,4.598f));
-            }
+            //if (anim.GetInteger("condition") == 0)
+            //{
+            //    StartCoroutine(IdleAnimRoutine(2,4.598f));
+            //}
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            if (anim.GetInteger("condition") == 0)
-            {
-                StartCoroutine(IdleAnimRoutine(3,2.458f));
-            }
+            //if (anim.GetInteger("condition") == 0)
+            //{
+            //    StartCoroutine(IdleAnimRoutine(3,2.458f));
+            //}
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            if (anim.GetInteger("condition") == 0)
-            {
-                StartCoroutine(IdleAnimRoutine(4,3.625f));
-            }
+            //if (anim.GetInteger("condition") == 0)
+            //{
+            //    StartCoroutine(IdleAnimRoutine(4,3.625f));
+            //}
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            if (anim.GetInteger("condition") == 0)
-            {
-                StartCoroutine(IdleAnimRoutine(5, 4.167f));
-            }
+            //if (anim.GetInteger("condition") == 0)
+            //{
+            //    StartCoroutine(IdleAnimRoutine(5, 4.167f));
+            //}
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
@@ -107,7 +112,8 @@ public class AnimController : MonoBehaviour
     IEnumerator DrawGuitarRoutine()
     {
         anim.SetInteger("condition", 6);
-        yield return new WaitForSeconds(0.625f);
+        //yield return new WaitForSeconds(0.625f);
+        yield return new WaitForSeconds(0.792f);
         for (int i = 0; i < guitars.Length;i++)
         {
             if (i == currentGuitarIndex)
@@ -136,7 +142,8 @@ public class AnimController : MonoBehaviour
         {
             guitar.SetActive(false);
         }
-        yield return new WaitForSeconds(0.625f);
+        yield return new WaitForSeconds(0.792f);
+        //yield return new WaitForSeconds(0.625f);
         anim.SetInteger("condition", 0);
         foreach (GameObject guitar in guitars) //ensures guitar is not shown
         {
