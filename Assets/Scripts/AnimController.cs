@@ -79,11 +79,12 @@ public class AnimController : MonoBehaviour
     /// <param name="time">The length of the animation.</param>
     IEnumerator IdleAnimRoutine(int condition,float time = 5f)
     {
-        faceController.RunAnimation(condition);
+        
+        //faceController.RunAnimation(condition);
         anim.SetInteger("condition", condition);
         yield return new WaitForSeconds(time);
         anim.SetInteger("condition", 0);
-        faceController.RunAnimation(0);
+        //faceController.RunAnimation(0);
 
     }
 
